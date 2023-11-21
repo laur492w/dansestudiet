@@ -1,6 +1,16 @@
+/*************** Reset *********************/
 * {
-  margin: 0;
+  margin: 0rem;
   box-sizing: border-box;
+}
+body {
+  font-family: "Prompt", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 html {
@@ -77,15 +87,23 @@ html {
 
 @font-face {
   font-family: "DansestudietSimple-Bold";
-  src: url(/public/font/DansestudietSimple-Bold.otf);
-}
-
-body {
-  font-family: "Prompt", sans-serif;
+  src: url(../font/DansestudietSimple-Bold.otf);
 }
 
 h1 {
   font-family: "DansestudietSimple-Bold";
+  font-size: var(--font-size-m);
+  color: var(--h1);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: var(--font-size-l);
+  }
 }
 
 /* 

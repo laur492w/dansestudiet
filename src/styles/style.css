@@ -2,3 +2,101 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  /* Primary */
+  --yellow-500-color: #ffe000;
+  --black-500-color: #000000;
+  --white-500-color: #ffffff;
+
+  /* Tokens */
+
+  /* Text */
+  --text-primary: var(--black-500-color);
+  --text-secondary: var(--white-500-color);
+  --h1: var(--yellow-500-color);
+  --h2: var(--black-500-color);
+  --h3: var(--black-500-color);
+  --button-primary: var(--white-500-color);
+  --button-secondary: var(--black-500-color);
+  --card-text-hover: var(--black-500-color);
+
+  /* Background */
+  --background-button-primary: var(--white-500-color);
+  --background-card: var(--yellow-500-color);
+  --background-button-secondary: var(--yellow-500-color);
+  --background-filter-secondary: var(--white-500-color);
+  --background-main-primary: var(--white-500-color);
+  --footer: var(--yellow-500-color);
+
+  /* Border */
+  --border-stroke-primary: var(--yellow-500-color);
+  --border-stroke-secondary: var(--black-500-color);
+
+  /* ------ */
+
+  /* Primary spacing */
+  --spacing-xxs: 1rem;
+  --spacing-xs: 2rem;
+  --spacing-s: 4rem;
+  --spacing-m: 8rem;
+  --spacing-l: 9.375rem;
+
+  /*Tokens spacing*/
+  --vandret-spacing-16: var(--spacing-xxs);
+  --vandret-spacing-32: var(--spacing-xs);
+  --lodret-spacing: var(--spacing-s);
+  --margin-left-right: var(--spacing-m);
+  --top: var(--spacing-l);
+
+  /* ------ */
+
+  /* Primary Font weight */
+  --font-weight-xs: 300;
+  --font-weight-s: 400;
+  --font-weight-m: 500;
+  --font-weight-l: 600;
+
+  /* ------ */
+
+  /* Primary Font sizes */
+  --font-size-xs: 1.5rem;
+  --font-size-s: 2rem;
+  --font-size-m: 4rem;
+  --font-size-l: 11.875rem;
+
+  /* Tokens Font sizes */
+  --broedtekst-font-size: var(--font-size-s);
+  --h1-font-size: var(--font-size-l);
+  --h2-font-size: var(--font-size-m);
+  --h3-font-size: var(--font-size-s);
+  --card-text-font-size: var(--font-size-xs);
+  --knap-primary-font-size: var(--font-size-s);
+  --knap-secondary-font-size: var(--font-size-xs);
+}
+
+@font-face {
+  font-family: "DansestudietSimple-Bold";
+  src: url(/public/font/DansestudietSimple-Bold.otf);
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+}
+
+h1 {
+  font-family: "DansestudietSimple-Bold";
+}
+
+/* 
+html {
+  --color-black-500: #3b3b3b;
+
+  --text-primary: var(--color-black-500);
+
+  --display-heading-primary: var(--text-primary);
+}
+
+p {
+  color: var(--display-heading-primary);
+} */

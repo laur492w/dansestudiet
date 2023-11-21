@@ -1,16 +1,29 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import "../styles/style.css";
+import Hero from "../components/Hero.astro";
+import Workshop_card from "../components/Workshop_card.astro";
+import Section from "../components/Section.astro";
+import Workshop_knap from "../components/Workshop_knap.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+<Hero/>
+<div class="workshop_section">
+	<h2>WORKSHOP</h2>
+<div class="cards">
+	<Workshop_card/>
+	<Workshop_card/>
+	<Workshop_card/>
+</div>
+<Workshop_knap/>
+</div>
+	
+<Section/>
+
+</Layout>
+
+<style>
+
+	
+</style>

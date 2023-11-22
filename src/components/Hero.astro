@@ -5,37 +5,35 @@ import Skema_knap from "../components/Skema_knap.astro";
   
   
   <div class="hero_grid">
-  <h1 class="hero_h1">DANSESTUDIET</h1>
+<img class="hero-pic" src="../img/hero-dansestudiet.png" alt="Hero-billede med dansere" />
+  <div class="hero_landing"><h1 class="hero_h1">DANSESTUDIET</h1>
   <p class="hero_text">Experimental Contemporary, Afro, House, Street Jazz og meget mere!</p>
-  <img class="hero-pic" src="../img/hero-dansestudiet.png" alt="Hero-billede med dansere" />
   <div class="hero_knap">
     <Skema_knap/>
+  </div>
   </div>
 </div>
 
 <style>
-.hero_grid{
-    display: flex;
-flex-direction: column;
-align-items: center;
-} 
-
-
-
-.hero_pic {
-
+.hero_grid {
+  position: relative;
+  text-align: center;
 }
 
-.hero_h1 {
- 
-}
-
-.hero_text {
-      g
+.hero_landing{
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero_knap {
-  
+padding-top: 4rem;
+}
+
+.hero-pic {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 </style>
 

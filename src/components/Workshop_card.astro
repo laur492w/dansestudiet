@@ -1,0 +1,48 @@
+---
+const {billede,titel,tekst} = Astro.props
+---
+
+
+
+
+<div class="card">
+<img src={billede} alt="billede">
+<h3>{titel}</h3>
+<p>{tekst}</p>
+</div>
+
+<style>
+ p{
+    color: var(--text-primary);
+ }
+
+ .card{
+border: solid var(--background-card);
+box-sizing: border-box;
+padding-top: 4rem;
+gap: 1rem;
+margin-inline: 2rem;
+padding: var(--vandret-spacing-16, 1rem);
+margin-top: 1rem;
+      
+ }
+
+ .card:hover{
+    background-color: var( --background-card);
+ }
+
+ .card img{
+
+ }
+
+ .card h3{
+    margin-top: 1rem;
+ }
+
+ .card p{
+margin-top: 0.5rem;
+ }
+
+
+ 
+</style>

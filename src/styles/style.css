@@ -51,13 +51,21 @@ html {
   --spacing-s: 4rem;
   --spacing-m: 8rem;
   --spacing-l: 9.375rem;
+  --spacing-button-desktop-s: 1.25rem;
+  --spacing-button-desktop-l: 2.5rem;
+  --spacing-button-mobile-s: 0.3125rem;
+  --spacing-button-mobile-l: 0.625rem;
 
   /*Tokens spacing*/
-  --vandret-spacing-16: var(--spacing-xxs);
-  --vandret-spacing-32: var(--spacing-xs);
-  --lodret-spacing: var(--spacing-s);
-  --margin-left-right: var(--spacing-m);
-  --top: var(--spacing-l);
+  --spacing-vandret-spacing-16: var(--spacing-xxs);
+  --spacing-vandret-spacing-32: var(--spacing-xs);
+  --spacing-lodret-spacing: var(--spacing-s);
+  --spacing-margin-left-right: var(--spacing-m);
+  --spacing-top: var(--spacing-l);
+  --spacing-button-top-desktop: var(--spacing-button-desktop-s);
+  --spacing-button-right-left-desktop: var(--spacing-button-desktop-l);
+  --spacing-button-top-mobile: var(--spacing-button-mobile-s);
+  --spacing-button-left-right-mobile: var(--spacing-button-mobile-l);
 
   /* ------ */
 
@@ -94,10 +102,6 @@ h1 {
   font-family: "DansestudietSimple-Bold";
   font-size: var(--font-size-m);
   color: var(--h1);
-}
-
-p {
-  color: var(--text-secondary);
 }
 
 @media (min-width: 1000px) {

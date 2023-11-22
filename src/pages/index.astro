@@ -10,7 +10,7 @@ import Skema_knap from "../components/Skema_knap.astro";
 <Layout>
 <Hero/>
 <div class="workshop_section">
-	<h2>WORKSHOP</h2>
+	<h2>WORKSHOPS</h2>
 <div class="cards">
 
 	<Workshop_card titel = "HIPHOP" tekst = "Vi får besøg af Olivia Sol Anselmo, som blandt andet er koreograf og danser for JADA og som har koreograferet Mads Mikkelsens dansescene. i filmen “Druk”. Olivia er en af de hotteste navne på den danske dansescene." billede = "../img/hiphop.webp"/>
@@ -35,17 +35,18 @@ import Skema_knap from "../components/Skema_knap.astro";
 }
 
 h2 {
+	margin-top: 3rem;
+	margin-bottom: 1rem;
 	margin-inline: 2rem;
 	font-size: 2rem;
 	font-weight: var(--font-weight-m);
-	margin-left: 4rem;
-
 }
+
 .cards {
 	display: grid;
-	gap: var(--spacing-vandret-spacing-16, 2rem);
+	gap: var(--spacing-lodret-spacing);
 	margin-inline: 2rem;
-
+	gap: 2rem;
 
 }
 
@@ -54,7 +55,24 @@ h2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
 		justify-items: center;
+		margin-inline: 8rem;
 
     }
+	h2 {
+	margin-inline: 8rem;
+	font-size: var(--h2-font-size);
+	margin-top: var(--spacing-top);
+	margin-bottom: var(--spacing-lodret-spacing);
+}
+
+.workshop_knap{
+	display: grid;
+	justify-items: end;
+	grid-column: 3;
+  justify-self: end;
+}
+
+
+
  }
 </style>

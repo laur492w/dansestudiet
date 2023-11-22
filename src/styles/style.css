@@ -109,16 +109,3 @@ h1 {
     font-size: var(--font-size-l);
   }
 }
-
-/* 
-html {
-  --color-black-500: #3b3b3b;
-
-  --text-primary: var(--color-black-500);
-
-  --display-heading-primary: var(--text-primary);
-}
-
-p {
-  color: var(--display-heading-primary);
-} */

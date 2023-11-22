@@ -1,5 +1,5 @@
 <section class="image_section">
-    <img src= "../img/sectionbillede.webp" alt="sectionbillede">
+    <img class="section_img" src= "../img/sectionbillede.webp" alt="sectionbillede">
 <div class="text-content">
     <h2>HVEM ER VI?</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ull.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ull</p>
@@ -9,16 +9,17 @@
 <style>
 
     img{
-      max-width: 2000px;
+      max-width: auto;
         height: auto;
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
         margin-inline: auto;
 
     }
 
     .image_section{
- width: 80%;
- margin-inline: auto;
+        width: 80%;
+        margin-inline: auto;
+        margin-top: var(--spacing-top, 9.375rem);
     }
 
     .text-content{
@@ -29,20 +30,30 @@
  @media (min-width: 1000px) {
     .image_section{
         display:grid;
-        grid-template-columns: 1fr 1fr;
-        
+        grid-template-columns: 1fr 1fr 1fr;   
     }
+
+    .section_img {
+grid-column: 1/3;
+    }
+
     img{
         width: 100%;
         height: auto;
-        margin-top: var(--spacing-top, 9.375rem);
+        /* margin-top: var(--spacing-top, 9.375rem); */
         /* margin-inline: 4rem; */
     }
 
     .text-content{
         margin-left: 3rem;
-        margin-top: 22rem;
+       
     }
+
+   h2 {
+    font-size: 4rem;
+    font-weight: 500;
+   }
+
 
    }
 

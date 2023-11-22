@@ -1,8 +1,15 @@
+---
+const { tekst, variant } = Astro.props
+---
 
+<!-- <a class="button-primary button-primary:hover" href="workshop.astro">SE SKEMA</a> -->
 
-<a class="button-primary button-primary:hover" href="workshop.astro">SE SKEMA</a>
+{variant === "skema" && <a class="button-primary button-primary:hover" href="workshop.astro"> {tekst} </a>
+}
 
-
+{variant === "workshop" && 
+<a class="button-secondary button-secondary:hover" href="workshop.astro"> {tekst} </a>
+}
 <style>
   a {
   text-decoration: none;
@@ -16,9 +23,26 @@ background-color: var(--background-button-primary);
 padding-inline: var(--spacing-button-left-right-mobile);
 padding-bottom: var(--spacing-button-top-mobile);
 padding-top: var(--spacing-button-top-mobile);
+
 }
 
 .button-primary:hover{
+background-color: var(--background-button-secondary);
+}
+
+.button-secondary {
+background-color: var(--background-button-primary);
+ font-weight: var(--font-weight-xxs);
+  color: var(--button-secondary);
+  padding-inline: var(--spacing-button-left-right-mobile);
+padding-bottom: var(--spacing-button-top-mobile);
+padding-top: var(--spacing-button-top-mobile);
+
+border: solid var( --button-secondary);
+box-sizing: border-box;
+}
+
+.button-secondary:hover{
 background-color: var(--background-button-secondary);
 }
 

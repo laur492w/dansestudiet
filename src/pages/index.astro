@@ -4,7 +4,7 @@ import "../styles/style.css";
 import Hero from "../components/Hero.astro";
 import Workshop_card from "../components/Workshop_card.astro";
 import Section from "../components/Section.astro";
-import Workshop_knap from "../components/Workshop_knap.astro";
+import Skema_knap from "../components/Skema_knap.astro";
 ---
 
 <Layout>
@@ -16,8 +16,11 @@ import Workshop_knap from "../components/Workshop_knap.astro";
 	<Workshop_card titel = "HIPHOP" tekst = "Vi får besøg af Olivia Sol Anselmo, som blandt andet er koreograf og danser for JADA og som har koreograferet Mads Mikkelsens dansescene. i filmen “Druk”. Olivia er en af de hotteste navne på den danske dansescene." billede = "../img/hiphop.webp"/>
 	<Workshop_card titel = "FLYING LOW" tekst = " Den brasilianske performer og kunstner, Julia Testa, besøger Aarhus og giver en workshop i den spændende contemporary floorwork teknik “Flying-Low” samt “Passing Through” teknik skabt af David Zambrano." billede = "../img/flyinglow.webp"/> 
 	<Workshop_card titel = "KOREOGRAFISK LAB" tekst = "I juni måned udbyder vi en helt særlig workshop over 2 dage, et laboratorium, hvor der sættes fokus på  koreografiske redskaber. Vores dygtige underviser, Lucas Kruse Kristiansen, vil dele ud af sine spændende erfaringer. " billede = "../img/koreografisklab.webp"/>
+<div class="workshop_knap">
+<Skema_knap variant="workshop" tekst="Find workshops"/>
 </div>
-<Workshop_knap/>
+</div>
+
 </div>
 	
 <Section/>
@@ -26,14 +29,19 @@ import Workshop_knap from "../components/Workshop_knap.astro";
 
 <style>
 
-h2{
+.workshop_knap{
+	display: grid;
+	justify-items: end;
+}
+
+h2 {
 	margin-inline: 2rem;
 	font-size: 2rem;
 	font-weight: var(--font-weight-m);
 	margin-left: 4rem;
 
 }
-.cards{
+.cards {
 	display: grid;
 	gap: var(--spacing-vandret-spacing-16, 2rem);
 	margin-inline: 2rem;
@@ -42,7 +50,7 @@ h2{
 }
 
 @media (min-width: 1000px) {
-    .cards{
+    .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
 		justify-items: center;

@@ -78,7 +78,7 @@ html {
   /* ------ */
 
   /* Primary Font sizes */
-  --font-size-xs: 1.5rem;
+  --font-size-xs: 1rem;
   --font-size-s: 2rem;
   --font-size-m: 4rem;
   --font-size-l: 11.875rem;
@@ -102,6 +102,12 @@ h1 {
   font-family: "DansestudietSimple-Bold";
   font-size: var(--font-size-m);
   color: var(--h1);
+}
+
+p {
+  font-family: "Prompt", sans-serif;
+  font-size: 1rem;
+  font-weight: var(--font-weight-s);
 }
 
 @media (min-width: 1000px) {
